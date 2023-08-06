@@ -1,0 +1,30 @@
+{{> layout/header }}
+
+<div class="container p-5">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"><b>Info</b></h4>
+            <p class="card-text">회원정보를 수정해주세요.</p>
+            <hr />
+            <form action="/action_page.php">
+                <div>
+                    <div class="mb-3 mt-3">
+                        <label for="username" class="form-label">username: </label>
+                        <input type="text" class="form-control" id="username" name="username" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" name="password">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">email:</label>
+                        <input type="email" class="form-control" id="email" name="email" disabled>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary form-control">수정 완료</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{> layout/footer }}

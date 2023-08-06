@@ -1,0 +1,23 @@
+{{> layout/header}}
+<div class="container p-5">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"><b>Write</b></h4>
+            <p class="card-text">내용을 입력해주세요.</p>
+            <hr />
+
+            <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                    <label for="title" class="form-label">title:</label>
+                    <input type="text" class="form-control" id="title" name="title">
+                    <label for="content" class="form-label">content:</label>
+                    <textarea class="form-control" rows="5" id="content" name="text"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-control">작성완료</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+{{> layout/footer}}
